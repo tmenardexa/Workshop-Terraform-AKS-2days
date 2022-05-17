@@ -14,7 +14,7 @@ jobs:
       - name: connexion Azure
         uses: Azure/login@v1 # Action pour se connecter à Azure https://github.com/Azure/login
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }} # Service Secrets de GitHub https://docs.github.com/en/actions/security-guides/encrypted-secrets
+          creds: ${{ secrets.SECRET_TMD_GITUBLAB }} # Service Secrets de GitHub https://docs.github.com/en/actions/security-guides/encrypted-secrets
 
       - name: Liste des ressources groupes dans un abonnement
         run: |
