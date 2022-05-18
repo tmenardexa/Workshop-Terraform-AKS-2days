@@ -22,7 +22,7 @@ jobs:
       - name: Login Azure
         uses: Azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.SECRET_TMD_GITUBLAB }}
     
       - name: Get AKS Credentials
         run: |
